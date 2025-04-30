@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Freshness Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🍏 Fruit Freshness Detection 🍊</h1>
+        <p>Deteksi kesegaran buah secara real-time! 🍉🍌🍍</p>
+
+        <div class="button-container">
+            <button onclick="startCamera('user')">📱 Kamera Depan</button>
+            <button onclick="startCamera('environment')">📷 Kamera Belakang</button>
+            <button onclick="startCameraAlternative()">🔄 Coba Kamera Lain</button>
+        </div>
+
+        <div class="video-container">
+            <img id="video-stream" src="" alt="Live Detection">
+        </div>
+        
+        <div class="status-box">
+            <h2>🍏 Jumlah Buah Segar: <span id="count-fresh">0</span></h2>
+            <h2>🍎 Jumlah Buah Tidak Segar: <span id="count-not-fresh">0</span></h2>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

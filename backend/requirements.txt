@@ -1,0 +1,11 @@
+Flask
+Flask-SocketIO
+torch
+torchvision
+ultralytics
+numpy
+opencv-python
+pillow
+eventlet
+gevent
+gevent-websocket
