@@ -1,7 +1,0 @@
-# Ignore virtual environment only inside backend/
-backend/venv/
-
-# Ignore large files inside backend
-backend/**/*.dll
-backend/**/*.lib
-backend/**/*.pyd
